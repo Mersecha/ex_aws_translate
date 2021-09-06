@@ -19,7 +19,7 @@ defmodule ExAws.Translate do
         "ClientToken" => UUID.uuid4(),
         "DataAccessRoleArn" => data_access_role_arn,
         "SourceLanguageCode" => source_language,
-        "TargetLanguageCodes" => target_language,
+        "TargetLanguageCodes" => [target_language],
         "InputDataConfig" => %{
           "ContentType" => content_type,
           "S3Uri" => input_bucket_uri
